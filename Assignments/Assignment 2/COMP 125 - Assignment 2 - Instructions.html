@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="assignment-word-guessing-game"><strong>Assignment: Word Guessing Game</strong></h1>
+<p><strong>Course: COMP 125 - Assignment 2</strong><br>
+<strong>Due Date: February 16, 2025, at 11:59 PM</strong></p>
+<hr>
+<h2 id="objective"><strong>Objective</strong></h2>
+<p>Your task is to complete the JavaScript functionality for a Word Guessing Game using the provided HTML, CSS, and base JavaScript files. The base setup includes only the <strong>regular mode</strong>, you must implement the full game logic, including <strong>guessing mechanics, lives, win/loss conditions, and Time Mode.</strong></p>
+<p>You are <strong>only allowed to edit the <code>script.js</code> file</strong>. The <code>index.html</code> and <code>styles.css</code> files are provided so you can understand the structure of the game.</p>
+<p>💻 <strong>View the completed assignment here</strong>:<br>
+<a href="https://gorgeous-youtiao-26e385.netlify.app/">https://gorgeous-youtiao-26e385.netlify.app/</a></p>
+<hr>
+<h2 id="mark-breakdown"><strong>Mark Breakdown</strong></h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Weight</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Correct Guess Handling</strong> (reveals correct letters, updates display)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>Lives System</strong> (reduces lives on incorrect guesses, ends game at 0)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>Win/Loss Conditions</strong> (checks if all letters are guessed or lives run out)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>Keyboard &amp; Click Input Support</strong> (must support both)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>Time Mode</strong> (10s countdown that ends the game at 0 seconds)</td>
+<td>10%</td>
+</tr>
+<tr>
+<td><strong>ChatGPT Usage</strong> (see rubric below)</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table><hr>
+<h2 id="chatgpt-usage-rubric-50"><strong>ChatGPT Usage Rubric (50%)</strong></h2>
+<p>To receive full marks, you must use ChatGPT <strong>correctly and strategically</strong>:</p>
+<ul>
+<li>
+<p><strong>Code Understanding (10%)</strong></p>
+<ul>
+<li>Ask specific questions about the JavaScript code structure.</li>
+<li>Avoid asking for complete solutions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Iteration &amp; Testing (10%)</strong></p>
+<ul>
+<li>Test the code ChatGPT provides you.</li>
+<li>Return with specific issues or improvements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Problem-Solving Steps (10%)</strong></p>
+<ul>
+<li>Break down big problems into smaller parts.</li>
+<li>Share error messages when stuck.</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Process (10%)</strong></p>
+<ul>
+<li>Ask “why” questions about solutions.</li>
+<li>Request explanations for better understanding.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proper Chat Sharing (10%)</strong></p>
+<ul>
+<li>⚠️ <strong>IMPORTANT</strong>: Do <strong>not</strong> upload images to ChatGPT, as this prevents sharing your conversation link.</li>
+<li>You must be logged into ChatGPT to share your conversation.</li>
+<li>Follow the video instructions to share your chat: <a href="https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8">https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8</a>.</li>
+<li>Test your shared link in an incognito window to verify it works.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="requirements"><strong>Requirements</strong></h2>
+<h3 id="️⃣-correct-guess-handling-10"><strong>1️⃣ Correct Guess Handling (10%)</strong></h3>
+<ul>
+<li>Players can <strong>click a letter</strong> or <strong>press a key</strong> on their keyboard.</li>
+<li>If the letter is in the word, <strong>reveal all occurrences</strong> of that letter.</li>
+<li>If the letter is <strong>incorrect</strong>, it should not be added.</li>
+</ul>
+<h3 id="️⃣-lives-system-10"><strong>2️⃣ Lives System (10%)</strong></h3>
+<ul>
+<li>The game starts with <strong>6 lives</strong>.</li>
+<li>Every incorrect guess <strong>reduces lives by 1</strong>.</li>
+<li>Display the number of lives remaining.</li>
+</ul>
+<h3 id="️⃣-winloss-conditions-10"><strong>3️⃣ Win/Loss Conditions (10%)</strong></h3>
+<ul>
+<li>The player <strong>wins</strong> when all letters are revealed.</li>
+<li>The player <strong>loses</strong> when lives reach 0.</li>
+<li>Display an appropriate <strong>win or game-over message</strong>.</li>
+</ul>
+<h3 id="️⃣-keyboard--click-input-support-10"><strong>4️⃣ Keyboard &amp; Click Input Support (10%)</strong></h3>
+<ul>
+<li>Players should be able to <strong>click the letter buttons</strong> on screen.</li>
+<li>Players should also be able to <strong>press keys on their keyboard (lowercase)</strong>.</li>
+<li><strong>Disable used letters</strong> so they can’t be clicked or typed again.</li>
+</ul>
+<h3 id="️⃣-time-mode-10"><strong>5️⃣ Time Mode (10%)</strong></h3>
+<ul>
+<li>The game should have a <strong>30-second countdown timer</strong>.</li>
+<li>If time runs out before the word is guessed, <strong>the game ends</strong>.</li>
+<li>The timer should be displayed on screen.</li>
+<li>The timer starts when the first guess is made.</li>
+</ul>
+<hr>
+<h2 id="hints"><strong>Hints</strong></h2>
+<p>1️⃣ <strong>Loop through <code>wordContainer.children</code> to update <code>_</code> with guessed letters.</strong><br>
+2️⃣ <strong>Use an array to track guessed letters and check if they exist in <code>currentWord</code>.</strong><br>
+3️⃣ <strong>Use <code>setInterval()</code> to create the countdown timer for Time Mode.</strong><br>
+4️⃣ <strong>Use <code>classList</code> to change between <code>.word-underscore</code> and <code>.word-letter</code>.</strong><br>
+5️⃣ <strong>Use Chrome DevTools to inspect the classes in the completed assignment and see how they change.</strong></p>
+<hr>
+<h2 id="submission"><strong>Submission</strong></h2>
+<ol>
+<li>
+<p>Edit the <strong><code>script.js</code></strong> file to complete the game functionality.</p>
+</li>
+<li>
+<p>Include your <strong>ChatGPT conversation links</strong> as a <strong>comment at the top of <code>script.js</code></strong>. Example:</p>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token comment">// ChatGPT Conversation Links:</span>
+<span class="token comment">// 1. https://chat.openai.com/share/... (add link here)</span>
+<span class="token comment">// 2. https://chat.openai.com/share/... (add link here)</span>
+
+</code></pre>
+</li>
+<li>
+<p>Zip all three files (<code>index.html</code>, <code>styles.css</code>, and <code>script.js</code>) and submit them to <strong>Luminate</strong>.</p>
+</li>
+</ol>
+<p>🚨 <strong>Cheating Warning</strong>: All code will be checked for plagiarism. If you follow the process correctly, you have nothing to worry about.</p>
+<p>Good luck! 🎯</p>
+</div>
+</body>
+
+</html>

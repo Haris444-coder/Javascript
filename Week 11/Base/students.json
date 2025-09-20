@@ -1,0 +1,762 @@
+[
+  {
+    "name": "Alice Johnson",
+    "studentId": "923456789",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 82
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 76
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 88
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 78
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 84
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 95
+      }
+    ]
+  },
+  {
+    "name": "Bob Smith",
+    "studentId": "923456788",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 68
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 74
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 82
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 79
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 85
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 80
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 87
+      }
+    ]
+  },
+  {
+    "name": "Charlie Davis",
+    "studentId": "923456787",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 94
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 96
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 93
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 98
+      }
+    ]
+  },
+  {
+    "name": "Diana Evans",
+    "studentId": "923456786",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 75
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 85
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 78
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 82
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 76
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 92
+      }
+    ]
+  },
+  {
+    "name": "Ethan Foster",
+    "studentId": "923456785",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 95
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 87
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 94
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 90
+      }
+    ]
+  },
+  {
+    "name": "Fiona Graham",
+    "studentId": "923456784",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 77
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 69
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 85
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 86
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 82
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 84
+      }
+    ]
+  },
+  {
+    "name": "George Harris",
+    "studentId": "923456783",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 87
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 93
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 94
+      }
+    ]
+  },
+  {
+    "name": "Hannah Irvine",
+    "studentId": "923456782",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 81
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 83
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 85
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 87
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 79
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 81
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 83
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 85
+      }
+    ]
+  },
+  {
+    "name": "Ian Jennings",
+    "studentId": "923456781",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 74
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 68
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 72
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 76
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 70
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 74
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 78
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 82
+      }
+    ]
+  },
+  {
+    "name": "Jasmine Kaur",
+    "studentId": "923456780",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 94
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 96
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 98
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 100
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 102
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 104
+      }
+    ]
+  },
+  {
+    "name": "Kyle Lee",
+    "studentId": "923456779",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 65
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 75
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 85
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 70
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 80
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 100
+      }
+    ]
+  },
+  {
+    "name": "Luna Martin",
+    "studentId": "923456778",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 67
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 75
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 83
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 78
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 86
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 94
+      }
+    ]
+  },
+  {
+    "name": "Mason Nguyen",
+    "studentId": "923456777",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 76
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 84
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 78
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 82
+      }
+    ]
+  },
+  {
+    "name": "Nora Patel",
+    "studentId": "923456776",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 87
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 93
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 89
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 77
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 85
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 88
+      }
+    ]
+  },
+  {
+    "name": "Oliver Zhou",
+    "studentId": "923456775",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 78
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 82
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 86
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 74
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 96
+      }
+    ]
+  },
+  {
+    "name": "Penelope Wright",
+    "studentId": "923456774",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 85
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 80
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 75
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 70
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 65
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 85
+      }
+    ]
+  },
+  {
+    "name": "Quincy Adams",
+    "studentId": "923456773",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 65
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 98
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 67
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 84
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 82
+      }
+    ]
+  },
+  {
+    "name": "Xavier Morris",
+    "studentId": "923456766",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 79
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 82
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 85
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 90
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 93
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 85
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 87
+      }
+    ]
+  },
+  {
+    "name": "Yvonne Parker",
+    "studentId": "923456765",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 88
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 84
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 87
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 93
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 94
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 96
+      }
+    ]
+  },
+  {
+    "name": "Zachary Newman",
+    "studentId": "923456764",
+    "grades": [
+      {
+        "courseCode": "COMP-100",
+        "mark": 92
+      },
+      {
+        "courseCode": "COMP-120",
+        "mark": 89
+      },
+      {
+        "courseCode": "COMP-213",
+        "mark": 94
+      },
+      {
+        "courseCode": "MATH-175",
+        "mark": 97
+      },
+      {
+        "courseCode": "COMP-122",
+        "mark": 95
+      },
+      {
+        "courseCode": "COMP-123",
+        "mark": 96
+      },
+      {
+        "courseCode": "COMP-125",
+        "mark": 91
+      },
+      {
+        "courseCode": "COMP-225",
+        "mark": 98
+      }
+    ]
+  }
+]

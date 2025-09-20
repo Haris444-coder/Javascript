@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>COMP125 - Week 1</title>
+    <script>
+      function updateGreeting() {
+        const nameInput = document.getElementById("nameInput");
+        const nameValue = nameInput.value;
+        const greeting =
+          "Hey " +
+          nameValue +
+          ", welcome to COMP125! Get ready to learn JavaScript!";
+        document.getElementById("greeting").innerHTML = greeting;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="greeting">Welcome to COMP125!</h1>
+    <label for="nameInput">What's your name </label>
+    <input type="text" id="nameInput" />
+    <button onclick="updateGreeting()">Show me the fun!</button>
+  </body>
+</html>

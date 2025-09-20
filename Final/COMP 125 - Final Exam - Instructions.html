@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Exam</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="comp-125---javascript-final-exam-instructions">COMP 125 - JavaScript Final Exam Instructions</h1>
+<hr>
+<h2 id="📌-introduction">📌 Introduction</h2>
+<p>Welcome to the COMP 125 Final Exam. You have 90 minutes to complete this test. There are 7 independent JavaScript questions. Each is worth 10 marks. The exam will be marked out of 60. Your best 6 questions will be used.</p>
+<p>You can reference this completed working example to help you understand what each question is supposed to do:</p>
+<p>👉 <a href="https://cheery-phoenix-62fd95.netlify.app/">https://cheery-phoenix-62fd95.netlify.app/</a></p>
+<hr>
+<h2 id="🧠-general-guidelines">🧠 General Guidelines</h2>
+<ol>
+<li>
+<p><strong>Only edit the <strong><strong><code>.js</code></strong></strong> file.</strong> Do not change any HTML or CSS.</p>
+</li>
+<li>
+<p><strong>Read the questions carefully.</strong> Look at the provided HTML elements to understand which IDs to use.</p>
+</li>
+<li>
+<p><strong>Use the working example</strong> to see how things should behave.</p>
+</li>
+<li>
+<p><strong>Try all questions.</strong> If you’re stuck for a while, move on and return later.</p>
+</li>
+<li>
+<p><strong>Use built-in browser tools</strong> like <code>console.log()</code> to test and debug.</p>
+</li>
+</ol>
+<hr>
+<h2 id="💬-chatgpt-log-requirement">💬 ChatGPT Log Requirement</h2>
+<p>You are allowed to use ChatGPT during the exam. However, you must include your shared conversation link at the top of your <code>script.js</code> file.</p>
+<p>📌 Example:</p>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// ChatGPT Log: https://chat.openai.com/share/abc123</span>
+
+</code></pre>
+<ul>
+<li>
+<p>If you used multiple chats, include all links.</p>
+</li>
+<li>
+<p>Test your link in an incognito window before submitting.</p>
+</li>
+</ul>
+<p><strong>Submissions without a working ChatGPT log will not be marked.</strong></p>
+<hr>
+<h2 id="📆-submission-instructions">📆 Submission Instructions</h2>
+<p>Submit a <code>.zip</code> file containing only:</p>
+<ul>
+<li>
+<p><code>index.html</code></p>
+</li>
+<li>
+<p><code>styles.css</code></p>
+</li>
+<li>
+<p><code>script.js</code></p>
+</li>
+</ul>
+<p>Submit your ZIP file on Luminate. Do not include other files.</p>
+<hr>
+<h2 id="🧪-final-exam-questions-60-marks-total">🧪 Final Exam Questions (60 Marks Total)</h2>
+<p>Each question is worth 10 marks.</p>
+<hr>
+<h3 id="🔹-question-1-–-to-do-list">🔹 Question 1 – To-Do List</h3>
+<p>Make the “Add” button add an item to the list. Make the “Clear List” button remove all items. The list must be saved using <code>localStorage</code> so it remains after refresh.</p>
+<hr>
+<h3 id="🔹-question-2-–-pokémon-finder">🔹 Question 2 – Pokémon Finder</h3>
+<p>When the user enters a number between 1 and 1024 and clicks “Get Pokémon”, fetch and show the shiny official image for that Pokémon using the PokéAPI.</p>
+<p>Hint: The image you’re looking for is located within the <code>sprites</code> object, under <code>other.official-artwork</code>.</p>
+<hr>
+<h3 id="🔹-question-3-–-typing-speed-test">🔹 Question 3 – Typing Speed Test</h3>
+<p>When the user clicks “Go”, they should type the sentence:</p>
+<pre><code>the quick brown fox jumps over the lazy dog
+
+</code></pre>
+<p>They have 10 seconds. Show a timer countdown while they type. If they finish in time, show “You win!”. Otherwise, show “You lose.”</p>
+<hr>
+<h3 id="🔹-question-4-–-holiday-countdown">🔹 Question 4 – Holiday Countdown</h3>
+<p>Populate the dropdown using JavaScript (not HTML) with Halloween, Christmas, and New Year’s Eve (2025). When a user selects a holiday, display how many days remain until that date.</p>
+<hr>
+<h3 id="🔹-question-5-–-library-management">🔹 Question 5 – Library Management</h3>
+<p>After uploading a JSON file, let users enter an ISBN and check books in or out. Show a message for success, or if no copies are available. Use a <code>Book</code> class to manage logic.</p>
+<hr>
+<h3 id="🔹-question-6-–-code-and-username-validator">🔹 Question 6 – Code and Username Validator</h3>
+<p>Check a form with two fields:</p>
+<ul>
+<li>
+<p><strong>Secret Code</strong> – Must be “COMP125”</p>
+</li>
+<li>
+<p><strong>Username</strong> – Must contain only letters and numbers (use a regex)</p>
+</li>
+</ul>
+<p>Use <code>setCustomValidity()</code> to show error messages as the user types. Let the browser handle validation and submission normally.</p>
+<hr>
+<h3 id="🔹-question-7-–-book-sorting-challenge">🔹 Question 7 – Book Sorting Challenge</h3>
+<p>After uploading a <code>.json</code> file, sort the books by:</p>
+<ol>
+<li>
+<p><strong>availableCopies</strong> (highest first)</p>
+</li>
+<li>
+<p><strong>title length</strong> (shortest first)</p>
+</li>
+</ol>
+<p>Show the top 10 books like:</p>
+<pre><code>The Hobbit (4)
+1984 (5)
+
+</code></pre>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="comp-125---assignment-3-mad-libs-game"><strong>COMP 125 - Assignment 3: Mad Libs Game</strong></h1>
+<p><strong>Due Date: March 16, 2025, by 11:59 PM</strong></p>
+<p>View the completed assignment here: <a href="https://chimerical-cajeta-51400f.netlify.app/">Completed Mad Libs Game</a>. Please note, the code will be scrambled.</p>
+<h3 id="what-is-mad-libs"><strong>What is Mad Libs?</strong></h3>
+<p>Mad Libs is a word game where one player prompts another for a list of words to substitute for blanks in a story. The game is typically played by asking for specific types of words (nouns, adjectives, verbs, etc.) without revealing the context. Once all words are collected, they’re inserted into the story, often creating humorous or nonsensical results. For this assignment, you’ll be creating a digital version where users input their words through a form, validate those inputs, and then display the completed story.</p>
+<h3 id="objective"><strong>Objective</strong></h3>
+<p>Your task is to complete a <strong>Mad Libs game</strong> using <strong>JavaScript</strong>. You will:</p>
+<ul>
+<li>Implement <strong>form validation</strong> using <strong>regular expressions (regex)</strong>.</li>
+<li>Dynamically <strong>update the embedded story</strong> with user input.</li>
+<li>Ensure proper <strong>error handling and user experience improvements</strong>.</li>
+</ul>
+<p>You are <strong>only allowed to edit the <code>script.js</code> file</strong>.<br>
+The <code>index.html</code> and <code>styles.css</code> files are provided to understand the structure and layout.</p>
+<h3 id="mark-breakdown"><strong>Mark Breakdown</strong></h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Weight</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form validation (regex-based)</td>
+<td><strong>15%</strong></td>
+</tr>
+<tr>
+<td>Story updates dynamically</td>
+<td><strong>15%</strong></td>
+</tr>
+<tr>
+<td>Submit button enables correctly</td>
+<td><strong>10%</strong></td>
+</tr>
+<tr>
+<td>Reset functionality works properly</td>
+<td><strong>10%</strong></td>
+</tr>
+<tr>
+<td>ChatGPT Usage</td>
+<td><strong>50%</strong></td>
+</tr>
+</tbody>
+</table><h3 id="chatgpt-usage-rubric"><strong>ChatGPT Usage Rubric</strong></h3>
+<ul>
+<li>
+<p><strong>Code Understanding (10%)</strong></p>
+<ul>
+<li>Ask specific questions about the code.</li>
+<li>Avoid asking for complete solutions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Iteration &amp; Testing (10%)</strong></p>
+<ul>
+<li>Test the code ChatGPT provides you.</li>
+<li>Return with specific issues or improvements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Problem-Solving Steps (10%)</strong></p>
+<ul>
+<li>Break big problems into smaller parts.</li>
+<li>Share error messages when stuck.</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Process (10%)</strong></p>
+<ul>
+<li>Ask “why” questions about solutions.</li>
+<li>Request explanations for understanding.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proper Chat Sharing (10%)</strong></p>
+<ul>
+<li>⚠️ <strong>IMPORTANT</strong>: Do not upload images to ChatGPT as this will prevent you from sharing your conversation link.</li>
+<li>You must be logged into ChatGPT to share your conversation.</li>
+<li>Follow the video instructions to share your chat: <a href="https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8">https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8</a>.</li>
+<li>Test your shared link in an incognito window to verify it works.</li>
+</ul>
+</li>
+</ul>
+<h3 id="requirements"><strong>Requirements</strong></h3>
+<ol>
+<li>
+<p><strong>Form Validation (15%)</strong></p>
+<ul>
+<li>Each input field must be validated using <strong>JavaScript and regex</strong>.</li>
+<li>If invalid, an <strong>error message appears</strong> below the field. (Error messages can be seen on the example link above).</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Validation Rule</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Student Name</strong></td>
+<td>Must start with a capital letter, only letters</td>
+<td><code>"Sam"</code></td>
+</tr>
+<tr>
+<td><strong>Professor Name</strong></td>
+<td>Must start with a capital letter, only letters</td>
+<td><code>"Dr. Johnson"</code></td>
+</tr>
+<tr>
+<td><strong>Adjective</strong></td>
+<td>At least <strong>5 characters</strong> long</td>
+<td><code>"exciting"</code></td>
+</tr>
+<tr>
+<td><strong>Verb (-ing form)</strong></td>
+<td>Ends in <code>-ing</code></td>
+<td><code>"jumping"</code></td>
+</tr>
+<tr>
+<td><strong>Number</strong></td>
+<td>Between <code>1-100</code></td>
+<td><code>"25"</code></td>
+</tr>
+<tr>
+<td><strong>Phone Number</strong></td>
+<td>Format: <code>123-456-7890</code></td>
+<td><code>"647-555-1234"</code></td>
+</tr>
+<tr>
+<td><strong>Cartoon Character</strong></td>
+<td>Any text (required)</td>
+<td><code>"Bugs Bunny"</code></td>
+</tr>
+<tr>
+<td><strong>Song Title</strong></td>
+<td>Any text (required)</td>
+<td><code>"Bohemian Rhapsody"</code></td>
+</tr>
+<tr>
+<td><strong>Colour</strong></td>
+<td>Selected from dropdown</td>
+<td><code>"Blue"</code></td>
+</tr>
+</tbody>
+</table><p><strong>⚠️ The submit button must remain disabled until all fields are valid.</strong></p>
+</li>
+<li>
+<p><strong>Dynamic Story Generation (15%)</strong></p>
+<ul>
+<li>Once the form is submitted:
+<ul>
+<li>The <strong>input values replace placeholders</strong> in the story.</li>
+<li>The <strong>story replaces the form</strong> on the page.</li>
+<li>The <strong>background colour changes</strong> based on the user’s selection.</li>
+</ul>
+</li>
+</ul>
+<h4 id="example-story-output"><strong>Example Story Output</strong></h4>
+<blockquote>
+<p>During a <strong>boring</strong> lecture, <strong>Sam’s</strong> phone suddenly rang with a loud song.<br>
+The <strong>25</strong> students in class all turned to look.<br>
+Professor <strong>Dr. Johnson</strong> dropped their marker in shock.<br>
+The screen lit up with an incoming call from <strong>Bugs Bunny</strong>.<br>
+“Who is calling from <strong>647-555-1234</strong>?” asked the professor.<br>
+The class voted instantly that as punishment, <strong>Sam</strong> had to <strong>do some jumping</strong> for one minute while explaining JavaScript.<br>
+The entire room fell silent as <strong>“Bohemian Rhapsody”</strong> blasted from the professor’s phone.<br>
+The professor turned <strong>blue</strong> as the students lost their minds laughing.</p>
+</blockquote>
+<p>📌 <strong>Story formatting must remain intact.</strong></p>
+</li>
+<li>
+<p><strong>Submit Button Functionality (10%)</strong></p>
+<ul>
+<li>The submit button should:
+<ul>
+<li><strong>Remain disabled</strong> until all form fields are valid.</li>
+<li>When clicked, <strong>submit the form</strong> and generate the story.</li>
+<li><strong>Handle the transition</strong> from form view to story view.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Reset Functionality (10%)</strong></p>
+<ul>
+<li>Clicking <code>"Create Another Story"</code> should:
+<ul>
+<li><strong>Reset the form</strong>.</li>
+<li><strong>Hide the story</strong>.</li>
+<li><strong>Show the form again</strong>.</li>
+<li><strong>Disable the submit button</strong> until inputs are valid.</li>
+<li><strong>Reset the background color</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="hints"><strong>Hints</strong></h3>
+<ul>
+<li>Use the <code>submit</code> event on a form for the event listener.</li>
+<li>Use <code>e.preventDefault()</code> to stop the form from submitting using the HTML default behavior.</li>
+<li>The story is already in the HTML; you need to replace each span in the story with the form input values.</li>
+<li>Use <code>form.reset()</code> to clear inputs when resetting.</li>
+<li>Use regular expressions (regex) with the <code>test()</code> method to validate each input field against the specified patterns.</li>
+<li>Consider using the <code>disabled</code> attribute on the submit button and toggle it based on form validation results.</li>
+</ul>
+<h3 id="submission"><strong>Submission</strong></h3>
+<ol>
+<li>Edit the <code>script.js</code> file to implement all functionality.</li>
+<li>Include your ChatGPT conversation link(s) as a comment at the top of your <code>script.js</code> file. Links should be in the order you used them. For example:<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token comment">// ChatGPT Conversation Links:</span>
+<span class="token comment">// 1. https://chat.openai.com/share/... (add the specific link here)</span>
+<span class="token comment">// 2. https://chat.openai.com/share/... (add the specific link here)</span>
+<span class="token comment">// Add as many links as needed</span>
+</code></pre>
+</li>
+<li>Zip up all three files (<code>index.html</code>, <code>styles.css</code>, and <code>script.js</code>) and submit them to Luminate by <strong>March 16, 2025, at 11:59 PM</strong>.</li>
+</ol>
+<p>⚠️ <strong>Cheating Warning</strong>: I scan all the code to check for cheating. If you follow the rules and do it properly, you have nothing to worry about.</p>
+<p>Good luck! 📝</p>
+</div>
+</body>
+
+</html>

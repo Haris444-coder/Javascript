@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Pizza Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="pizzaOrderForm">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Name">
+
+        <h2>Customize Your Pizza</h2>
+        <div>Pizza Size:</div>
+        <label><input type="radio" name="size" value="Small" data-price="10" class="size"> Small</label>
+        <label><input type="radio" name="size" value="Medium" data-price="12" class="size" checked> Medium</label>
+        <label><input type="radio" name="size" value="Large" data-price="15" class="size"> Large</label>
+
+        <div>Pizza Crust:</div>
+        <label><input type="radio" name="crust" value="Thin" data-price="2" class="crust"> Thin</label>
+        <label><input type="radio" name="crust" value="Pan Pizza" data-price="3" class="crust" checked> Pan
+            Pizza</label>
+        <label><input type="radio" name="crust" value="Stuffed" data-price="4" class="crust"> Stuffed</label>
+
+        <div>Toppings:</div>
+        <label><input type="checkbox" name="topping" value="Pepperoni" data-price="1" class="topping"> Pepperoni</label>
+        <label><input type="checkbox" name="topping" value="Mushrooms" data-price="1" class="topping"> Mushrooms</label>
+        <label><input type="checkbox" name="topping" value="Onions" data-price="1" class="topping"> Onions</label>
+
+        <div>Subtotal: <span id="subtotalPrice">$12</span></div>
+        <div>Tax (13%): <span id="taxPrice">$0</span></div>
+        <div>Final Total: <span id="finalTotalPrice">$0</span></div>
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+hint 1.
+look at how you divide by 0, what happens when you divide by 0 and what gets returned
+some form of question is being dividing by 0
+
+hint 2.
+need to review how to use event listeners on mouse movements and input boxes
+understand how to use event listeners on mouse movement and input boxes
+
+hint 3.
+have to run some form of loop on a set of elements
+have to grab a bunch of elements and then run a loop o those elements
+
+hint 4.
+review try catch
+different sections of try catch
+review how you throw an error (check a condition, and then throw an error)
+specifically how to throw an error
+
+hint 5.
+review set interval and clear interval
+
+hint 6.
+one question on debugging
+
+hint 7.
+look into the browser
+

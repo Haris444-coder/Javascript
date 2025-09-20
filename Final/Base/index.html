@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMP 125 Final Exam</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Question 1: To-Do List</h1>
+      <div id="Q1" class="question-box">
+        <input type="text" id="Q1-todo-input" placeholder="Enter a new to-do" />
+        <button id="Q1-add-todo">Add</button>
+        <button id="Q1-clear-todo">Clear List</button>
+        <ul id="Q1-todo-list"></ul>
+      </div>
+
+      <h1>Question 2: Pokémon Finder</h1>
+      <div id="Q2" class="question-box">
+        <input
+          type="number"
+          id="Q2-pokemon-id"
+          placeholder="Enter Pokémon ID"
+          min="1"
+          max="1024"
+          value="1"
+        />
+        <button id="Q2-get-pokemon">Get Pokémon</button>
+        <div id="Q2-pokemon-display">
+          <img id="Q2-pokemon-img" src="" alt="Pokémon Image" width="100%" />
+        </div>
+      </div>
+
+      <h1>Question 3: Typing Speed Test</h1>
+      <div id="Q3" class="question-box">
+        <textarea
+          id="Q3-textarea"
+          placeholder="Type the phrase here..."
+          disabled
+        ></textarea>
+        <button id="Q3-go-button">Go</button>
+        <div id="Q3-message"></div>
+      </div>
+
+      <h1>Question 4: Holiday Countdown</h1>
+      <div id="Q4" class="question-box">
+        <select id="Q4-holiday-dropdown"></select>
+        <div id="Q4-days-until"></div>
+      </div>
+
+      <h1>Question 5: Library Management</h1>
+      <div id="Q5" class="question-box">
+        <input type="file" id="Q5-file-input" accept=".json" />
+        <div id="Q5-file-message"></div>
+        <input
+          type="number"
+          id="Q5-isbn-input"
+          placeholder="Enter ISBN"
+          min="1"
+          max="9999"
+        />
+        <button id="Q5-checkout-button">Check Out</button>
+        <button id="Q5-checkin-button">Check In</button>
+        <div id="Q5-message"></div>
+      </div>
+
+      <h1>Question 6: Code and Username Validator</h1>
+      <div id="Q6" class="question-box">
+        <form id="Q6-form" action="submitted.html">
+          <input
+            type="text"
+            id="Q6-code"
+            placeholder="Enter Secret Code"
+            required
+          />
+          <input
+            type="text"
+            id="Q6-username"
+            placeholder="Enter Username"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <h1>Question 7: Book Sorting Challenge</h1>
+      <div id="Q7" class="question-box">
+        <input type="file" id="Q7-file-input" accept=".json" />
+        <button id="Q7-sort-button">Sort Books</button>
+        <div id="Q7-output"></div>
+      </div>
+    </div>
+  </body>
+</html>

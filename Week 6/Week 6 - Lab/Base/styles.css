@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+#new-task {
+  padding: 10px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #c8e6c9;
+}

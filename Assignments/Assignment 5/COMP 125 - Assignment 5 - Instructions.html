@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p><strong>COMP 125 - Assignment 5: Pokédex Search + Favourites</strong></p>
+<hr>
+<p><strong>✨ Objective</strong></p>
+<p>Your task is to build a dynamic Pokédex application using JavaScript. Users can search for Pokémon by name or ID, view their details in a styled card, open a modal to view more information, and add up to 6 Pokémon to a favourites list stored in <code>localStorage</code>. You will work with an external API (<a href="https://pokeapi.co">PokeAPI</a>).</p>
+<p>You will be provided with:</p>
+<ul>
+<li>A completed <code>index.html</code></li>
+<li>A completed <code>styles.css</code></li>
+<li>An empty <code>script.js</code> where all your work goes</li>
+<li>A Pokédex logo and loading spinner image</li>
+</ul>
+<p>You may <strong>only edit <code>script.js</code></strong>.</p>
+<p>A working example of the completed assignment is available here:<br>
+📍 <a href="https://soft-pothos-9c0c9e.netlify.app">https://soft-pothos-9c0c9e.netlify.app</a></p>
+<hr>
+<p><strong>🔍 Features &amp; Requirements</strong></p>
+<ol>
+<li>
+<p><strong>Search Functionality (15%)</strong></p>
+<ul>
+<li>User enters a Pokémon name or ID and clicks “Search Pokémon”</li>
+<li>Fetches data from <a href="https://pokeapi.co">PokeAPI</a></li>
+<li>While loading, a Pokéball spinner is shown</li>
+<li>If the Pokémon is not found, an error message is displayed</li>
+</ul>
+</li>
+<li>
+<p><strong>Display Basic Info (15%)</strong></p>
+<ul>
+<li>Show a styled card with:
+<ul>
+<li>Name</li>
+<li>ID</li>
+<li>Image</li>
+<li>Types</li>
+<li>Abilities</li>
+<li>A “More Info” button</li>
+<li>An “Add to Favourites” button</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>"More Info" Modal (10%)</strong></p>
+<ul>
+<li>Clicking “More Info” opens a modal showing:
+<ul>
+<li>Height, weight, base stats</li>
+<li>Modal can be closed with the X or by clicking outside the box</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Favourites System (10%)</strong></p>
+<ul>
+<li>Clicking “Add to Favourites” saves the Pokémon to <code>localStorage</code></li>
+<li>Users can only favourite up to 6 Pokémon</li>
+<li>Clicking “View Favourites” toggles between favourites and search</li>
+</ul>
+</li>
+<li>
+<p><strong>ChatGPT Usage (50%)</strong></p>
+<ul>
+<li>This assignment emphasizes using ChatGPT to debug and learn</li>
+<li>Submit your <strong>ChatGPT conversation link(s)</strong> as a comment at the top of <code>script.js</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<p><strong>🔹 Mark Breakdown</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT Usage</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Search Functionality</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Display Info</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>More Info Modal</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Favourites Feature</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table><hr>
+<p><strong>💬 ChatGPT Usage Rubric (50%)</strong></p>
+<ul>
+<li><strong>Code Understanding (10%)</strong>: Ask specific questions about what parts of the code do</li>
+<li><strong>Iteration &amp; Testing (10%)</strong>: Try your code, then ask ChatGPT about any issues</li>
+<li><strong>Problem-Solving (10%)</strong>: Break large problems into steps, ask about bugs</li>
+<li><strong>Learning Process (10%)</strong>: Ask “why” to build understanding</li>
+<li><strong>Proper Sharing (10%)</strong>:
+<ul>
+<li>No screenshots (they break share links)</li>
+<li>Must use your logged-in ChatGPT account to share</li>
+<li>Paste links at the top of <code>script.js</code> as comments</li>
+</ul>
+</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js"><span class="token comment">// ChatGPT Conversation Links:</span>
+<span class="token comment">// 1.</span>
+<span class="token comment">// 2.</span>
+<span class="token comment">// Add as many links as needed</span>
+</code></pre>
+<hr>
+<p><strong>📅 Submission Instructions</strong></p>
+<ul>
+<li>Submit the following three files:
+<ul>
+<li><code>index.html</code></li>
+<li><code>styles.css</code></li>
+<li><code>script.js</code></li>
+</ul>
+</li>
+<li>Zip them and upload to <strong>Luminate</strong></li>
+<li>Due: <strong>April 15, 2025 @ 11:59 PM</strong></li>
+</ul>
+<hr>
+<p><strong>⚠️ Late Policy</strong><br>
+This is the final assignment. Submissions will close at <strong>11:59 PM on April 15, 2025</strong>. Late submissions will not be accepted.</p>
+<hr>
+<p><strong>💡 Hints</strong></p>
+<ul>
+<li>Understand the PokeAPI before starting</li>
+<li><code>localStorage</code> can only store text, so think about how you want to store your favourites</li>
+<li>Use <code>async/await</code> for your API calls</li>
+<li>Use the <code>.hidden</code> class to hide elements (e.g. the spinner)</li>
+</ul>
+<hr>
+<p>Good luck, and have fun catching 'em all! 🚀</p>
+</div>
+</body>
+
+</html>

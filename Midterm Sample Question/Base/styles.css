@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #50586c;
+  background-color: #dce2f0;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-box {
+  margin-bottom: 40px;
+}
+.question-header {
+  display: flex;
+}
+
+.question-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.question {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.question-instructions {
+  width: 400px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #50586c;
+  color: #fff;
+}
+
+#q5 .question {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#q5box {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border: 4px solid black;
+}

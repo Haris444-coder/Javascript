@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <form id="myForm">
+      <label for="password">User Name:</label><br />
+      <input type="input" id="username" name="username" required /><br />
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        pattern=".{8,}"
+      /><br />
+      <label for="confirmPassword">Confirm Password:</label><br />
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+        pattern=".{8,}"
+      /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

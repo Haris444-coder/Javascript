@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 - Mad Libs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container fade-in">
+      <div class="header">
+        <h1>COMP125 - Assignment 3</h1>
+      </div>
+
+      <!-- Input Form (First Screen) -->
+      <div class="input-form" id="madlib-form-container">
+        <div class="instruction-box">
+          <strong>How to play:</strong> <br />Fill in all fields below to
+          generate your unique Mad Libs story.
+        </div>
+        <form id="madlib-form">
+          <div class="form-group">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" placeholder="Enter a name" />
+            <div class="error-message" id="student-name-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="professor-name">Professor Name:</label>
+            <input
+              type="text"
+              id="professor-name"
+              placeholder="Enter a professor's name"
+            />
+            <div class="error-message" id="professor-name-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="adjective">Adjective:</label>
+            <input
+              type="text"
+              id="adjective"
+              placeholder="Enter an adjective"
+            />
+            <div class="error-message" id="adjective-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="verb">Verb (-ing form):</label>
+            <input
+              type="text"
+              id="verb"
+              placeholder="Enter a verb ending in -ing"
+            />
+            <div class="error-message" id="verb-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="number">Number (1-100):</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="Enter a number"
+              min="1"
+              max="100"
+            />
+            <div class="error-message" id="number-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" placeholder="123-456-7890" />
+            <div class="error-message" id="phone-number-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="cartoon-character">Cartoon Character:</label>
+            <input
+              type="text"
+              id="cartoon-character"
+              placeholder="Enter a cartoon character"
+            />
+            <div class="error-message" id="cartoon-character-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="song-title">Song Title:</label>
+            <input
+              type="text"
+              id="song-title"
+              placeholder="Enter a song title"
+            />
+            <div class="error-message" id="song-title-error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="colour">Colour:</label>
+            <select id="colour">
+              <option value="pink">Pink</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="yellow">Yellow</option>
+              <option value="orange">Orange</option>
+              <option value="black">Black</option>
+            </select>
+          </div>
+
+          <div class="button-container">
+            <button
+              type="submit"
+              id="submit-btn"
+              class="action-button"
+              disabled
+            >
+              Generate Story
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Story Display (Second Screen) -->
+      <div id="story-container" class="story-container hidden">
+        <div class="story-text">
+          <p>
+            During a
+            <span id="story-adjective" class="highlight">[adjective]</span>
+            lecture,
+            <span id="story-student-name" class="highlight">[student-name]</span
+            >'s phone suddenly rang with a loud song.
+          </p>
+          <p>
+            The
+            <span id="story-number" class="highlight">[number]</span> students
+            in class all turned to look. Professor
+            <span id="story-professor-name" class="highlight"
+              >[professor-name]</span
+            >
+            dropped their marker in shock.
+          </p>
+          <p>
+            The screen lit up with an incoming call from
+            <span id="story-cartoon-character" class="highlight"
+              >[cartoon-character]</span
+            >. "Who is calling from
+            <span id="story-phone-number" class="highlight">[phone-number]</span
+            >?" asked the professor.
+          </p>
+          <p>
+            The class voted instantly that as punishment,
+            <span id="story-student-name-2" class="highlight"
+              >[student-name]</span
+            >
+            had to do some<span id="story-verb" class="highlight">[verb]</span>
+            for one minute while explaining JavaScript.
+          </p>
+          <p>
+            As the class erupted into laughter, even Professor
+            <span id="story-professor-name-2" class="highlight"
+              >[professor-name]</span
+            >
+            chuckled... until their own phone rang. Loudly.
+          </p>
+          <p>
+            The entire room fell silent as "<span
+              id="story-song-title"
+              class="highlight"
+              >[song-title]</span
+            >" blasted from the professor's phone. The professor turned
+            <span id="story-colour" class="highlight">[colour]</span> as the
+            students lost their minds laughing.
+          </p>
+        </div>
+        <div class="button-container">
+          <button id="reset-btn" class="action-button">
+            Create Another Story
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

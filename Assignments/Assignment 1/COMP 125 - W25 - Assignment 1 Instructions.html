@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3 id="assignment-traffic-light-controller">Assignment: Traffic Light Controller</h3>
+<h4 id="objective"><strong>Objective</strong></h4>
+<p>Your task is to bring the provided traffic light interface to life by writing JavaScript. You will implement functionality for six buttons to control the light states, cycle through predefined colors, and generate random light changes.</p>
+<p>You are <strong>only allowed to edit the <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><code>script.js</code></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong> file</strong>. The <code>index.html</code> and <code>styles.css</code> files are provided to understand the IDs, classes, and layout.</p>
+<p>View the completed assignment here: <a href="https://storied-cassata-702141.netlify.app/">Completed Traffic Light</a>. Please note, the code will be scrambled.</p>
+<hr>
+<h3 id="mark-breakdown"><strong>Mark Breakdown</strong></h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Weight</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Static Controls (Red, Yellow, Green Buttons)</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Auto Mode (Predefined Sequence)</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>Random Mode (Random Light Changes)</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>ChatGPT Usage</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table><h3 id="chatgpt-usage-rubric"><strong>ChatGPT Usage Rubric</strong></h3>
+<ul>
+<li>
+<p><strong>Code Understanding (10%)</strong></p>
+<ul>
+<li>Ask specific questions about the code.</li>
+<li>Avoid asking for complete solutions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Iteration &amp; Testing (10%)</strong></p>
+<ul>
+<li>Test the code ChatGPT provides you.</li>
+<li>Return with specific issues or improvements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Problem-Solving Steps (10%)</strong></p>
+<ul>
+<li>Break big problems into smaller parts.</li>
+<li>Share error messages when stuck.</li>
+</ul>
+</li>
+<li>
+<p><strong>Learning Process (10%)</strong></p>
+<ul>
+<li>Ask “why” questions about solutions.</li>
+<li>Request explanations for understanding.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proper Chat Sharing (10%)</strong></p>
+<ul>
+<li>⚠️ <strong>IMPORTANT</strong>: Do not upload images to ChatGPT as this will prevent you from sharing your conversation link.</li>
+<li>You must be logged into ChatGPT to share your conversation.</li>
+<li>Follow the video instructions to share your chat: <a href="https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8">https://www.loom.com/share/3cecc1913f014678b2183740c3e7aeb8</a>.</li>
+<li>Test your shared link in an incognito window to verify it works.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="requirements"><strong>Requirements</strong></h3>
+<ol>
+<li>
+<p><strong>Static Controls (15%)</strong></p>
+<ul>
+<li>Implement buttons to turn on the <strong>Red</strong>, <strong>Yellow</strong>, and <strong>Green</strong> lights.</li>
+<li>Only one light should be active at a time.</li>
+<li>If a mode (Auto or Random) is running, these buttons should stop it.</li>
+</ul>
+</li>
+<li>
+<p><strong>Auto Mode (15%)</strong></p>
+<ul>
+<li>Implement the <strong>Auto Mode</strong> button to cycle through the predefined <code>autoModeSequence</code> array at 500ms intervals.</li>
+<li>The sequence should reset to the beginning after reaching the end of the array.</li>
+</ul>
+</li>
+<li>
+<p><strong>Random Mode (20%)</strong></p>
+<ul>
+<li>Implement the <strong>Random Mode</strong> button to change the light to a random color (<code>red</code>, <code>yellow</code>, or <code>green</code>) every 500ms.</li>
+<li>Add functionality to stop this mode when the <strong>Stop Random</strong> button is clicked.</li>
+</ul>
+</li>
+<li>
+<p><strong>ChatGPT Usage (50%)</strong></p>
+<ul>
+<li>Refer to the ChatGPT usage rubric provided in the outline.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="hints"><strong>Hints</strong></h3>
+<ul>
+<li>You will need to add the <code>active</code> class programmatically to the appropriate light color for it to turn on.</li>
+<li>Use the <code>autoModeSequence</code> array already defined in the <code>script.js</code> file for cycling through colors in Auto Mode:<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token keyword">const</span> autoModeSequence <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">"red"</span><span class="token punctuation">,</span> <span class="token string">"yellow"</span><span class="token punctuation">,</span> <span class="token string">"green"</span><span class="token punctuation">,</span> <span class="token string">"yellow"</span><span class="token punctuation">,</span> <span class="token string">"red"</span><span class="token punctuation">,</span> <span class="token string">"yellow"</span><span class="token punctuation">,</span> <span class="token string">"green"</span><span class="token punctuation">,</span>
+  <span class="token comment">// Continue sequence...</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li>Use <code>setInterval</code> to repeatedly execute a function for both Auto Mode and Random Mode. Use <code>clearInterval</code> to stop the interval when switching modes or stopping the lights.</li>
+</ul>
+<hr>
+<h3 id="submission"><strong>Submission</strong></h3>
+<ol>
+<li>
+<p>Edit the <code>script.js</code> file to implement the required functionality.</p>
+</li>
+<li>
+<p>Include your ChatGPT conversation link(s) as a comment at the top of your <code>script.js</code> file. Links should be in the order you used them. For example:</p>
+<pre class=" language-javascript"><code class="prism  language-javascript"><span class="token comment">// ChatGPT Conversation Links:</span>
+<span class="token comment">// 1. https://chat.openai.com/share/... (add the specific link here)</span>
+<span class="token comment">// 2. https://chat.openai.com/share/... (add the specific link here)</span>
+<span class="token comment">// Add as many links as needed</span>
+</code></pre>
+</li>
+<li>
+<p>Zip up all three files (<code>index.html</code>, <code>styles.css</code>, and <code>script.js</code>) and submit them to Luminate by <strong>February 2, 2025, at 11:59 PM</strong>.</p>
+</li>
+</ol>
+<p>⚠️ Cheating Warning: I scan all the code to check for cheating. If you follow the rules and do it properly, you have nothing to worry about.</p>
+<p>Good luck! 🚦</p>
+</div>
+</body>
+
+</html>
